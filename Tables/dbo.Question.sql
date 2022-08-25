@@ -13,7 +13,6 @@ CREATE TABLE [dbo].[Question]
 [QuestionTypeID] [int] NOT NULL,
 [TopicID] [int] NOT NULL,
 [ILOID] [int] NOT NULL,
-[CanBeUsedLater] [bit] NULL CONSTRAINT [DF_QuestionBank_canBeUsedLater] DEFAULT ((1)),
 [IsDeleted] [bit] NULL
 ) ON [PRIMARY]
 GO
