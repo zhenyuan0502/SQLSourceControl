@@ -1,0 +1,3 @@
+CREATE SCHEMA [ind02400_lionuser]
+AUTHORIZATION [ind02400_lionuser]
+GO

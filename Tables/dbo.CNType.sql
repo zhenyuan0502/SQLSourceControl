@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[CNType]
+(
+[CNTypeID] [int] NOT NULL IDENTITY(1, 1),
+[CNTypeName] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[IsDeleted] [bit] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[CNType] ADD CONSTRAINT [PK_CNType] PRIMARY KEY CLUSTERED ([CNTypeID]) ON [PRIMARY]
+GO

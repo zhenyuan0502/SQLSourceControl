@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[ATType]
+(
+[ATTypeID] [int] NOT NULL IDENTITY(1, 1),
+[ATTypeName] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[IsDeleted] [bit] NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[ATType] ADD CONSTRAINT [PK_Assessment] PRIMARY KEY CLUSTERED ([ATTypeID]) ON [PRIMARY]
+GO
